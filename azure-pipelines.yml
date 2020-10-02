@@ -16,13 +16,13 @@ steps:
     azureResourceManagerConnection: 'azurermservcon'
     subscriptionId: 'c9a9de7f-66c5-4ffa-bc73-29f50759e666'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'armdevopsrg'
+    resourceGroupName: 'hellorg'
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/MainTemplate.json'
     overrideParameters: '-projectName azuredevops -linkedTemplateUri https://raw.githubusercontent.com/susvin81/ARMPipeline/master/CreateWebApp/LinkedTemplate.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'deployazuredevops'
+    deploymentName: 'hellodevops'
   displayName: 'Run a one-line script'
 
 
