@@ -17,7 +17,7 @@ steps:
     azureResourceManagerConnection: 'AzureDevOps Project ARM Connection'
     subscriptionId: 'c9a9de7f-66c5-4ffa-bc73-29f50759e666'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'Arm DevOps RG'
+    resourceGroupName: 'ArmDevOpsRG'
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/MainTemplate.json'
