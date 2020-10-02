@@ -23,7 +23,7 @@ steps:
     csmFile: 'CreateWebApp/MainTemplate.json'
     overrideParameters: '-projectName AzureDevOps -linkedTemplateUri https://raw.githubusercontent.com/susvin81/ARMPipeline/master/CreateWebApp/LinkedTemplate.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'DeployAzureDevOpsTemplate'
+    deploymentName: 'deployazuredevOps'
   displayName: 'Run a one-line script'
 
 - script: |
