@@ -22,20 +22,10 @@ steps:
     csmFile: 'CreateWebApp/MainTemplate.json'
     overrideParameters: '-projectName azuredevops -linkedTemplateUri https://raw.githubusercontent.com/susvin81/ARMPipeline/master/CreateWebApp/LinkedTemplate.json'
     deploymentMode: 'Incremental'
-- task: AzureResourceManagerTemplateDeployment@3
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'AzureDevOps Project ARM Connection'
-    subscriptionId: 'c9a9de7f-66c5-4ffa-bc73-29f50759e666'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'armdevopsrg'
-    location: 'Central US'
-    templateLocation: 'Linked artifact'
-    csmFile: 'CreateWebApp/MainTemplate.json'
-    overrideParameters: '-projectName AzureDevOps -linkedTemplateUri https://raw.githubusercontent.com/susvin81/ARMPipeline/master/CreateWebApp/LinkedTemplate.json'
-    deploymentMode: 'Incremental'
     deploymentName: 'deployazuredevops'
   displayName: 'Run a one-line script'
+
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
